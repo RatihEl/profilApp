@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_150dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_profile"
+            android:layout_marginStart="@dimen/_15sp"
+            android:text="@string/_myname"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_25sp" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_1000dp"
+            android:layout_below="@+id/tv_name">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/shape_ratih" />
+
+            <TextView
+                android:id="@+id/tv_propil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/text_profile"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_65"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/profile_2" />
+
+            <TextView
+                android:id="@+id/achieement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_270sp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/_achievement"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dsc_achievment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/achievement2" />
+
+            <TextView
+                android:id="@+id/_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_420sp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/_contact"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dsc_comtact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+
+                android:padding="@dimen/_10dp"
+                android:text="@string/contact2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_1000dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/shape_eldin" />
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sp"
+                android:layout_marginEnd="@dimen/_75sp"
+                android:text="@string/_education"
+                android:textSize="@dimen/_17sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_school" />
+
+            <TextView
+                android:id="@+id/dsc_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sp"
+                android:text="@string/education2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_250dp"
+                android:layout_marginEnd="@dimen/_20sp"
+                android:contentDescription="@string/_todoo"
+                android:src="@drawable/shape_eldin" />
+
+            <TextView
+                android:id="@+id/organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_245sp"
+                android:layout_marginEnd="@dimen/_75sp"
+                android:text="@string/_organization"
+                android:textSize="@dimen/_17sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_organization" />
+
+            <TextView
+                android:id="@+id/dsc_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_275sp"
+                android:text="@string/oragnization2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_500dp"
+                android:layout_marginEnd="@dimen/_20sp"
+                android:contentDescription="@string/_todoooo"
+                android:src="@drawable/shape_eldin" />
+
+            <TextView
+                android:id="@+id/expertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_498sp"
+                android:layout_marginEnd="@dimen/_75sp"
+                android:text="@string/_expertise"
+                android:textSize="@dimen/_17sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_expertise" />
+
+            <TextView
+                android:id="@+id/dsc_expertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_530sp"
+                android:text="@string/expertise2" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
